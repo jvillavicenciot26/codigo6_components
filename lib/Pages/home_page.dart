@@ -1,6 +1,7 @@
 import 'package:codigo6_components/Pages/alert_page.dart';
 import 'package:codigo6_components/Pages/avatar_page.dart';
 import 'package:codigo6_components/Pages/card_page.dart';
+import 'package:codigo6_components/Pages/grid_page.dart';
 import 'package:codigo6_components/Pages/input_page.dart';
 import 'package:codigo6_components/Pages/list_page.dart';
 import 'package:flutter/material.dart';
@@ -163,6 +164,19 @@ class HomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (BuildContext context) => ListViewPage(),
+                      ),
+                    );
+                  },
+                ),
+                ItemMenuWidget(
+                  title: "GridPage",
+                  description: "Detalle de GridPage",
+                  icon: Icons.grid_3x3,
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (BuildContext context) => GridPage(),
                       ),
                     );
                   },

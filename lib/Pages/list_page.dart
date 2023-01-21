@@ -315,7 +315,7 @@ class MyItemListWidget extends StatelessWidget {
             ),
             child: Image.network(
               data["image"],
-              height: 120,
+              height: 160,
               width: 120,
               fit: BoxFit.cover,
             ),
