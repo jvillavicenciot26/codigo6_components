@@ -1,6 +1,8 @@
 import 'package:codigo6_components/Pages/alert_page.dart';
 import 'package:codigo6_components/Pages/avatar_page.dart';
 import 'package:codigo6_components/Pages/card_page.dart';
+import 'package:codigo6_components/Pages/input_page.dart';
+import 'package:codigo6_components/Pages/list_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -135,6 +137,32 @@ class HomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (BuildContext context) => CardPage(),
+                      ),
+                    );
+                  },
+                ),
+                ItemMenuWidget(
+                  title: "Input",
+                  description: "Detalle de input",
+                  icon: Icons.input,
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (BuildContext context) => InputPage(),
+                      ),
+                    );
+                  },
+                ),
+                ItemMenuWidget(
+                  title: "ListView",
+                  description: "Detalle de ListView",
+                  icon: Icons.list,
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (BuildContext context) => ListViewPage(),
                       ),
                     );
                   },
